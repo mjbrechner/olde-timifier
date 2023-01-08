@@ -14,25 +14,24 @@
 <body>
 
     <header>
-        <h1>Olde-Timifier</h1>
-        <h3>The olde-timifier, here to help your text harken back to bygone times of yore.</h3>
-
-
         <!-- Hamburger menu -->
         <div class="hamburger-menu" onclick="menuFunction()">
             <div class="hamburger-lines"></div>
             <div class="hamburger-lines"></div>
             <div class="hamburger-lines"></div>
         </div>
-
+        <h1>Olde-Timifier</h1>
+        <h3>The olde-timifier, here to help your text harken back to bygone times of yore.</h3>
     </header>
 
 
     <main>
         <textarea id="text-input" cols="30" rows="10"></textarea>
+        <div class="button-area">
+            <button onclick="convertTextOlde()">To Olde Style</button>
+            <button onclick="convertTextModern()">To Modern Style</button>
+        </div>
         <p id="text-output"></p>
-        <button onclick="convertTextOlde()">To Olde Style</button>
-        <button onclick="convertTextModern()">To Modern Style</button>
     </main>
 
     <footer>
