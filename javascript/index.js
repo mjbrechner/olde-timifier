@@ -29,7 +29,7 @@ function convertTextOlde() {
     // If LONG S comes before F, change back to SHORT S.
     newText = newText.replace(/ſ(?=f)/g, "s");
 
-    textOutputBox.textContent = newText;
+    textOutputBox.value = newText;
 }
 
 function convertTextModern() {
@@ -51,7 +51,7 @@ function convertTextModern() {
     // No need to check for ALL CAPS, since LONG S is inherently a LOWERCASE letter.
     newText = newText.replace(/ſ/g, "s");
 
-    textOutputBox.textContent = newText;
+    textOutputBox.value = newText;
 }
 
 
@@ -68,7 +68,7 @@ function copyToClipboard() {
 // Erase all in
 function eraseText() {
     document.getElementById("text-input").value = "";
-    textOutputBox.textContent = "";
+    textOutputBox.value = "";
     originalText = "";
     newText = "";
 }

@@ -21,17 +21,17 @@
             <div class="hamburger-lines"></div>
         </div>
         <h1>Olde-Timifier</h1>
-        <h3>The olde-timifier, here to help your text harken back to bygone times of yore.</h3>
+        <h2>The olde-timifier, here to help your text harken back to bygone times of yore.</h2>
     </header>
 
 
     <main>
-        <textarea id="text-input" cols="30" rows="10"></textarea>
+        <textarea aria-label="text-input" id="text-input"></textarea>
         <div class="button-area">
             <button onclick="convertTextOlde()">To Olde Style</button>
             <button onclick="convertTextModern()">To Modern Style</button>
         </div>
-        <p id="text-output"></p>
+        <textarea aria-label="text-output" id="text-output"></textarea>
         <div class="button-area">
             <button onclick="copyToClipboard()">Copy Text</button>
             <button onclick="eraseText()">Erase Text</button>
