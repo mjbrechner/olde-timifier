@@ -22,19 +22,28 @@
         </div>
         <h1>Olde-Timifier</h1>
         <h2>The olde-timifier, here to help your text harken back to bygone times of yore.</h2>
+        <div id="nav-menu">
+            <div>MAIN</div>
+            <div>INFO</div>
+            <div>ABOUT</div>
+        </div>
     </header>
 
 
-    <main>
-        <textarea aria-label="text-input" id="text-input"></textarea>
-        <div class="button-area">
-            <button onclick="convertTextOlde()">To Olde Style</button>
-            <button onclick="convertTextModern()">To Modern Style</button>
-        </div>
-        <textarea aria-label="text-output" id="text-output"></textarea>
-        <div class="button-area">
-            <button onclick="copyToClipboard()">Copy Text</button>
-            <button onclick="eraseText()">Erase Text</button>
+    <main id="main-area">
+        <div id="info-area"></div>
+        <div id="about-area"></div>
+        <div id="converter-area">
+            <textarea aria-label="text-input" id="text-input"></textarea>
+            <div class="button-area">
+                <button onclick="convertTextOlde()">To Olde Style</button>
+                <button onclick="convertTextModern()">To Modern Style</button>
+            </div>
+            <textarea aria-label="text-output" id="text-output"></textarea>
+            <div class="button-area">
+                <button onclick="copyToClipboard()">Copy Text</button>
+                <button onclick="eraseText()">Erase Text</button>
+            </div>
         </div>
     </main>
 
@@ -53,6 +62,7 @@
         <!-- Profile picture/favicon created by M.J. Brechner © 2022 -->
         <!-- <img class="profile-pic" src="images/profile-pic.png"> -->
     </footer>
+    <script src="javascript/menu.js" defer></script>
     <script src="javascript/index.js" defer></script>
 </body>
 
