@@ -77,11 +77,11 @@ hr {
 }
 
 #info-area {
-    visibility: hidden;
+    display: none;
 }
 
 #about-area {
-    visibility: hidden;
+    display: none;
 }
 
 #converter-area {

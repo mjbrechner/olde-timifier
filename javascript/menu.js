@@ -1,6 +1,9 @@
 'use strict';
 
 let navMenu = document.getElementById("nav-menu");
+let menuConverterArea = document.getElementById("converter-area");
+let menuInfoArea = document.getElementById("info-area");
+let menuAboutArea = document.getElementById("about-area");
 
 // Open/close hamburger manu
 function menuFunction() {
@@ -36,4 +39,28 @@ function closeMenu() {
     } else {
         navMenu.style.display = "none";
     }
+}
+
+
+// Menu options
+
+function menuConverter() {
+menuConverterArea.style.display = "flex";
+menuInfoArea.style.display = "none";
+menuAboutArea.style.display = "none";
+closeMenu();
+}
+
+function menuInfo() {
+menuConverterArea.style.display = "none";
+menuInfoArea.style.display = "flex";
+menuAboutArea.style.display = "none";
+closeMenu();
+}
+
+function menuAbout() {
+menuConverterArea.style.display = "none";
+menuInfoArea.style.display = "none";
+menuAboutArea.style.display = "flex";
+closeMenu();
 }
