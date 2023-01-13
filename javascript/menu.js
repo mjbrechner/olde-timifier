@@ -29,6 +29,11 @@ window.addEventListener('resize', (event) => {
 
 
 document.getElementById("main-area").addEventListener("click", closeMenu);
+
 function closeMenu() {
-navMenu.style.display = "none";
+    if (window.innerWidth >= 768) {
+        // Always keep the menu visible when the screen is large.
+    } else {
+        navMenu.style.display = "none";
+    }
 }
