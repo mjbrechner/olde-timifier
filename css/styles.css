@@ -8,10 +8,16 @@
 * {
     color: #61401E;
     background-color: #E0C9B1;
+    font-family: 'IM Fell English', serif;
 }
 
 header {
     text-align: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
 }
 
 .hamburger-menu {
@@ -99,6 +105,7 @@ textarea {
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
+    font-size: 1.25em;
     resize: none;
 }
 
@@ -114,6 +121,7 @@ button {
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
+    font-size: 1em;
     cursor: pointer;
 }
 
