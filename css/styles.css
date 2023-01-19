@@ -92,6 +92,8 @@ hr {
 
 #info-area,
 #about-area {
+    flex-direction: column;
+    gap: 1em;
     font-size: 1.25em;
 }
 
