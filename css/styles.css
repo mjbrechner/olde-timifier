@@ -126,10 +126,17 @@ textarea {
 button {
     background-color: #E0C9B1;
     border-radius: 5px;
+    border-color: #3f352b;
     border-style: solid;
     border-width: 2px;
     font-size: 1em;
+    box-shadow: 3px 3px #61574D;
     cursor: pointer;
+}
+
+button:active {
+    box-shadow: 1px 1px;
+    transform: translate(1px);
 }
 
 /* #text-output {
