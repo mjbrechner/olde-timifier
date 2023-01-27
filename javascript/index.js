@@ -78,8 +78,8 @@ function convertTextModern() {
 
 // Copy text to clipboard
 function copyToClipboard() {
-    if (newText) {
-        navigator.clipboard.writeText(newText);
+    if (textOutputBox.value) {
+        navigator.clipboard.writeText(textOutputBox.value);
         console.log("text copied");
     } else {
         console.log("no text to copy");
