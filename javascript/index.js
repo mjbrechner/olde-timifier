@@ -75,7 +75,6 @@ function convertTextModern() {
     textOutputBox.value = newText;
 }
 
-
 // Copy text to clipboard
 function copyToClipboard() {
     if (textOutputBox.value) {

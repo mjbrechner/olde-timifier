@@ -15,7 +15,6 @@ function menuFunction() {
 };
 
 // Close hamburger menu if window is expanded to have an always-visible navigation bar
-
 window.addEventListener('resize', (event) => {
     if (true) {
         let e = window.innerWidth;
@@ -28,9 +27,6 @@ window.addEventListener('resize', (event) => {
 });
 
 // Close menu if anywhere in the main area is clicked.
-
-
-
 document.getElementById("main-area").addEventListener("click", closeMenu);
 
 function closeMenu() {
@@ -41,9 +37,7 @@ function closeMenu() {
     }
 }
 
-
 // Menu options
-
 function menuConverter() {
 menuConverterArea.style.display = "flex";
 menuInfoArea.style.display = "none";
