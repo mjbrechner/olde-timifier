@@ -104,6 +104,7 @@ hr {
     flex-direction: column;
     gap: 1em;
     font-size: 1.25em;
+    padding-top: 1%;
 }
 
 #converter-area {
