@@ -76,12 +76,17 @@ function convertTextModern() {
 }
 
 // Copy text to clipboard
+function copyNotification() {
+    document.getElementById("copy-notification").style.visibility = "hidden";
+}
+
 function copyToClipboard() {
     if (textOutputBox.value) {
         navigator.clipboard.writeText(textOutputBox.value);
-        console.log("text copied");
+        document.getElementById("copy-notification").style.visibility = "visible";
+        setTimeout(copyNotification, 1500);
     } else {
-        console.log("no text to copy");
+        // No text to copy
     }
 }
 

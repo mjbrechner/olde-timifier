@@ -29,7 +29,7 @@ h2 {
 }
 
 #thorn-in-h2 {
-display: none;
+    display: none;
 }
 
 .hamburger-menu {
@@ -148,6 +148,17 @@ button:active {
     transform: translate(1px);
 }
 
+#copy-notification {
+    position: relative;
+    top: -10em;
+    padding: .1em .25em;
+    font-size: 1.25em;
+    color: #f8d4b0;
+    background-color: #3f352b;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -200,7 +211,8 @@ footer {
     }
 
     #info-area,
-    #about-area {
+    #about-area,
+    #copy-notification {
         font-size: 1.35em;
     }
 
@@ -243,7 +255,8 @@ footer {
     }
 
     #info-area,
-    #about-area {
+    #about-area,
+    #copy-notification {
         font-size: 1.5em;
     }
 
