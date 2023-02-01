@@ -196,8 +196,10 @@ footer {
         display: flex;
         flex-direction: row;
         position: static;
+        margin: .75em 0;
         width: 100%;
-        border: none;
+        border-top: 2px solid #61401E;
+        border-bottom: 2px solid #61401E;
         visibility: visible;
         box-shadow: none;
     }
@@ -205,6 +207,12 @@ footer {
     #nav-menu>div {
         background-color: #E0C9B1;
         color: #61401E;
+        border-radius: 5px;
+    }
+
+        #nav-menu>div:hover {
+        background-color: #61401E;
+        color: #E0C9B1;
     }
 
     hr {
