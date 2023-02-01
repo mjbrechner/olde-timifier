@@ -207,6 +207,7 @@ footer {
     #nav-menu>div {
         background-color: #E0C9B1;
         color: #61401E;
+        width: 100%;
         border-radius: 5px;
     }
 
@@ -257,6 +258,12 @@ footer {
 
     h2 {
         font-size: 1.35em;
+    }
+
+    #nav-menu {
+        margin: 1em 0;
+        border-top: 3px solid #61401E;
+        border-bottom: 3px solid #61401E;
     }
 
     #nav-menu>div {
