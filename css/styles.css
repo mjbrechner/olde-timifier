@@ -126,6 +126,10 @@ textarea {
     resize: none;
 }
 
+#text-output {
+    color: rgb(118, 118, 118);
+}
+
 .button-area {
     display: flex;
     flex-direction: row;

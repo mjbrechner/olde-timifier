@@ -1,7 +1,7 @@
 'use strict';
 
 let originalText;
-let textOutputBox = document.getElementById("text-output");
+const textOutputBox = document.getElementById("text-output");
 let newText;
 let convertThorn = true;
 let convertLongS = true;
@@ -51,6 +51,7 @@ function convertTextOlde() {
     }
 
     textOutputBox.value = newText;
+    textOutputBox.style.color = "#3f352b";
 }
 
 function convertTextModern() {
@@ -73,6 +74,7 @@ function convertTextModern() {
     newText = newText.replace(/ſ/g, "s");
 
     textOutputBox.value = newText;
+    textOutputBox.style.color = "#3f352b";
 }
 
 // Copy text to clipboard
@@ -96,4 +98,15 @@ function eraseText() {
     textOutputBox.value = "";
     originalText = "";
     newText = "";
+}
+
+// If textOutputBox is clicked, change to active color
+
+textOutputBox.addEventListener("click", clearTextOutputBox);
+
+function clearTextOutputBox() {
+    textOutputBox.style.color = "#3f352b";
+    if (textOutputBox.value === "Add þe text þat you would like to ſee converted to an old-faſhioned ſtyle...") {
+        textOutputBox.value = "";
+    }
 }
