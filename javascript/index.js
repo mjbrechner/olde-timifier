@@ -99,14 +99,3 @@ function eraseText() {
     originalText = "";
     newText = "";
 }
-
-// If textOutputBox is clicked, change to active color
-
-textOutputBox.addEventListener("click", clearTextOutputBox);
-
-function clearTextOutputBox() {
-    textOutputBox.style.color = "#3f352b";
-    if (textOutputBox.value === "Add þe text þat you would like to ſee converted to an old-faſhioned ſtyle...") {
-        textOutputBox.value = "";
-    }
-}

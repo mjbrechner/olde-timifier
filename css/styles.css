@@ -122,7 +122,7 @@ textarea {
     border-color: #61401E;
     border-radius: 5px;
     border-style: solid;
-    border-width: 2px;
+    border-width: 3px;
     font-size: 1.25em;
     resize: none;
 }
@@ -134,6 +134,7 @@ textarea:focus {
 
 #text-output {
     color: rgb(118, 118, 118);
+    border-style: none;
 }
 
 .button-area {
