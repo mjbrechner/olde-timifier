@@ -80,12 +80,14 @@ function convertTextModern() {
 // Copy text to clipboard
 function copyNotification() {
     document.getElementById("copy-notification").style.visibility = "hidden";
+    document.getElementById("copy-notification").style.animation = "";
 }
 
 function copyToClipboard() {
     if (textOutputBox.value) {
         navigator.clipboard.writeText(textOutputBox.value);
         document.getElementById("copy-notification").style.visibility = "visible";
+        document.getElementById("copy-notification").style.animation = "copy-animation 2s ease-out";
         setTimeout(copyNotification, 1500);
     } else {
         // No text to copy

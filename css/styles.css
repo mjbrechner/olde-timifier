@@ -161,14 +161,34 @@ button:active {
 }
 
 #copy-notification {
-    position: relative;
-    top: -10em;
+    position: sticky;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: fit-content;
+    height: fit-content;
     padding: .1em .25em;
     font-size: 1.25em;
     color: #f8d4b0;
     background-color: #3f352b;
     border-radius: 5px;
     visibility: hidden;
+}
+
+@keyframes copy-animation {
+    0% {
+        top: 25%;
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        top: 75%;
+        opacity: 0;
+    }
 }
 
 footer {
