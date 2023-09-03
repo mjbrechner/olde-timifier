@@ -77,6 +77,14 @@ function convertTextModern() {
     textOutputBox.style.color = "#3f352b";
 }
 
+function revertText() {
+
+    if (textOutputBox.value !== "") {
+        textOutputBox.value = originalText;
+    }
+}
+
+
 // Copy text to clipboard
 function copyNotification() {
     document.getElementById("copy-notification").style.visibility = "hidden";
