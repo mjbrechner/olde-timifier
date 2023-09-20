@@ -1,3 +1,6 @@
+<!-- This is an earlier version of this project that had a few more features. I later streamlined things to focus on the most useful elements,
+deleting some of these additional options that, while potentially interesting, risked cluttering things up. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,10 +104,16 @@
         <div id="converter-area">
             <textarea aria-label="text-input" id="text-input" placeholder="Add the text that you would like to see converted to an old-fashioned style..."></textarea>
             <div class="button-area">
-                <button onclick="convertTextOlde()">Olde Style</button>
-                <!-- <button onclick="revertText()">Revert to Original</button> -->
+                <button onclick="convertAll(); convertTextOlde()">Olde Style</button>
+                <!-- <button onclick="convertOnlyThorn(); convertTextOlde()">Olde Style (Þ Only)</button>
+                <button onclick="convertOnlyLongS(); convertTextOlde()">Olde Style (ſ Only)</button> -->
+                <button onclick="convertTextModern()">Modern Style</button>
+                <button onclick="revertText()">Revert to Original</button>
+            </div>
+            <textarea aria-label="text-output" id="text-output" disabled></textarea>
+            <div class="button-area">
                 <button onclick="copyToClipboard()">Copy Text</button>
-                <button onclick="eraseText()">Erase All</button>
+                <button onclick="eraseText()">Erase All Text</button>
             </div>
         </div>
     </main>
@@ -125,7 +134,7 @@
         <!-- <img class="profile-pic" src="images/profile-pic.png"> -->
     </footer>
     <script src="javascript/menu.js" defer></script>
-    <script src="javascript/index.js" defer></script>
+    <script src="javascript/index-original.js" defer></script>
 </body>
 
 </html>
