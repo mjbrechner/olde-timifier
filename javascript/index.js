@@ -53,8 +53,8 @@ function copyToClipboard() {
     if (document.getElementById("text-input").value) {
         navigator.clipboard.writeText(document.getElementById("text-input").value);
         document.getElementById("copy-notification").style.visibility = "visible";
-        document.getElementById("copy-notification").style.animation = "copy-animation 2s ease-out";
-        setTimeout(copyNotification, 1500);
+        document.getElementById("copy-notification").style.animation = "copy-animation 4s ease-out";
+        setTimeout(copyNotification, 2000);
     } else {
         // No text to copy
     }

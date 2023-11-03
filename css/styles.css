@@ -180,7 +180,7 @@ button:active {
 }
 
 #copy-notification {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
@@ -196,7 +196,7 @@ button:active {
 
 @keyframes copy-animation {
     0% {
-        top: 25%;
+        top: 15%;
         opacity: 1.0;
     }
 
