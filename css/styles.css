@@ -9,6 +9,7 @@
     color: #61401E;
     background-color: #E0C9B1;
     font-family: 'IM Fell English', serif;
+    font-size: 1.02em;
 }
 
 header {
@@ -125,11 +126,11 @@ textarea {
     border-width: 3px;
     font-size: 1.25em;
     resize: none;
+    cursor: auto;
 }
 
 ::-webkit-scrollbar {
     width: 1em;
-    cursor: pointer;
 }
 
 ::-webkit-scrollbar-track {
@@ -284,6 +285,10 @@ footer {
         font-size: 1.1em;
     }
 
+    .button-area {
+        gap: 2em;
+    }
+
     footer {
         flex-direction: row;
         margin-top: 1.25em;
@@ -332,6 +337,10 @@ footer {
 
     button {
         font-size: 1.25em;
+    }
+
+    .button-area {
+        gap: 2.5em;
     }
 
     footer {

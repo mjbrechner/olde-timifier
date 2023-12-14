@@ -35,14 +35,6 @@ function convertTextOlde() {
     document.getElementById("text-input").value = newText;
 }
 
-// Revert to original text
-// function revertText() {
-//     if (document.getElementById("text-input").value !== "") {
-//         document.getElementById("text-input").value = originalText;
-//     }
-// }
-
-
 // Copy text to clipboard
 function copyNotification() {
     document.getElementById("copy-notification").style.visibility = "hidden";
