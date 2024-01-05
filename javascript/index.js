@@ -7,6 +7,18 @@ let convertThorn = true;
 let convertLongS = true;
 const isUpperCase = str => str === str.toUpperCase();
 
+// This function resets the animation of the text color.
+function resetTextColor() {
+    document.getElementById("text-input").style.animationName = "";
+}
+
+// This function briefly animates the text color as a helpful visual cue for when something is supposed to happen.
+function animateTextColor() {
+    document.getElementById("text-input").style.animationName = "text-color-animation";
+    document.getElementById("text-input").style.animationDuration = "1s";
+}
+
+// This function handles the character conversion to the "Olde Tyme" style.
 function convertTextOlde() {
     inputtedText = document.getElementById("text-input").value;
     originalText = inputtedText;
@@ -33,6 +45,10 @@ function convertTextOlde() {
     newText = newText.replace(/ſ(?=f)/g, "s");
 
     document.getElementById("text-input").value = newText;
+
+    // Animate text color
+    animateTextColor();
+    setTimeout(resetTextColor, 1000);
 }
 
 // Copy text to clipboard
@@ -47,6 +63,9 @@ function copyToClipboard() {
         document.getElementById("copy-notification").style.visibility = "visible";
         document.getElementById("copy-notification").style.animation = "copy-animation 4s ease-out";
         setTimeout(copyNotification, 2000);
+        // Animate text color
+        animateTextColor();
+        setTimeout(resetTextColor, 1000);
     } else {
         // No text to copy
     }

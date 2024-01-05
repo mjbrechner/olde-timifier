@@ -129,6 +129,12 @@ textarea {
     cursor: auto;
 }
 
+@keyframes text-color-animation {
+    from {color: #E0C9B1;}
+    /* to {color: #61401E;} */
+    to {color: #3f352b;}
+}
+
 ::-webkit-scrollbar {
     width: 1em;
 }
