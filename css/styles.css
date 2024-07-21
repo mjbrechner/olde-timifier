@@ -34,11 +34,10 @@ h2 {
 }
 
 .hamburger-menu {
-    visibility: visible;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: fixed;
     top: 0;
     left: 0;
     width: 25px;
@@ -47,6 +46,7 @@ h2 {
     background-color: #E0C9B1;
     border-radius: 5px;
     cursor: pointer;
+    visibility: visible;
 }
 
 .hamburger-lines {
@@ -61,13 +61,13 @@ h2 {
 }
 
 #nav-menu {
-    background-color: #61401E;
-    color: #E0C9B1;
+    position: fixed;
     display: flex;
     flex-direction: column;
+    background-color: #61401E;
+    color: #E0C9B1;
     justify-content: space-around;
     gap: 0;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -130,9 +130,14 @@ textarea {
 }
 
 @keyframes text-color-animation {
-    from {color: #E0C9B1;}
+    from {
+        color: #E0C9B1;
+    }
+
     /* to {color: #61401E;} */
-    to {color: #3f352b;}
+    to {
+        color: #3f352b;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -248,17 +253,17 @@ footer {
     }
 
     #nav-menu {
-        background-color: #E0C9B1;
-        color: #61401E;
+        position: static;
         display: flex;
         flex-direction: row;
-        position: static;
+        background-color: #E0C9B1;
+        color: #61401E;
         margin: .75em 0;
         width: 100%;
         border-top: 2px solid #61401E;
         border-bottom: 2px solid #61401E;
-        visibility: visible;
         box-shadow: none;
+        visibility: visible;
     }
 
     #nav-menu>div {
@@ -271,6 +276,11 @@ footer {
     #nav-menu>div:hover {
         background-color: #61401E;
         color: #E0C9B1;
+    }
+
+    #nav-menu>div:active {
+        background-color: #E0C9B1;
+        color: #61401E;
     }
 
     hr {
